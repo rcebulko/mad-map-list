@@ -20,9 +20,7 @@ const mapListHtml = maps.trim()
   )
   .map(parts => {
     const [title, imgUrl, linkUrl] = parts;
-    let img = `
-      <img src='${imgUrl}'>
-      <span class='map-title'>${title}</span>
+    let img = `<img src='${imgUrl}'><span class='map-title'>${title}</span>`
     if (linkUrl) {
       img = `<a href='${linkUrl}'>${img}</a>`;
     }
