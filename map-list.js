@@ -14,7 +14,7 @@ Cave; https://preview.redd.it/7ul366do6m151.jpg?width=960&crop=smart&auto=webp&s
 const mapListHtml = maps.trim()
   .split('\n')
   .filter(Boolean) // Ignore empty lines
-  .filter(line => line.startsWith('#')) // Ignore # comment lines
+  .filter(line => !line.startsWith('#')) // Ignore # comment lines
   .map(
     line => line.split(';').map(s => s.trim())
   )
@@ -28,4 +28,4 @@ const mapListHtml = maps.trim()
   })
   .join('\n')
 
-document.body.innerHTML = mapListHtml;
+document.getElementById('container').innerHTML = mapListHtml;
