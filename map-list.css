@@ -1,3 +1,5 @@
+/* This file has no organizational structure */
+
 .map {
   min-width: 300px;
   width: 30%;
@@ -38,4 +40,9 @@ a {
 .map:hover {
     border-color: #000;
     background: #FAA3;
+}
+
+h2 a {
+    font-style: italic;
+    color: #CCC;
 }
